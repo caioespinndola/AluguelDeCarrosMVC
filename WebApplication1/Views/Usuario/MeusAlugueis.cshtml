@@ -1,0 +1,31 @@
+﻿@using Microsoft.EntityFrameworkCore.Metadata
+@{
+    ViewData["Title"] = "Meus Aluguéis";
+}
+
+<h2>Histórico de Aluguéis</h2>
+
+<table class="table table-bordered mt-3">
+    <thead>
+        <tr>
+            <th>Carro</th>
+            <th>Data de Início</th>
+            <th>Data de Devolução</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Fiat Argo</td>
+            <td>01/06/2025</td>
+            <td>05/06/2025</td>
+            <td><span class="text-success">Finalizado</span></td>
+        </tr>
+        <tr>
+            <td>Renault Kwid</td>
+            <td>10/06/2025</td>
+            <td>-</td>
+            <td><span class="text-warning">Em andamento</span></td>
+        </tr>
+    </tbody>
+</table>

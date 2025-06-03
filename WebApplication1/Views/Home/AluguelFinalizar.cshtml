@@ -1,0 +1,29 @@
+﻿@using Microsoft.EntityFrameworkCore.Metadata
+@{
+    ViewData["Title"] = "Finalizar Aluguel";
+}
+
+<div class="container mt-5">
+    <h2>Finalizar Aluguel de @Model.Modelo</h2>
+
+    <form>
+        <div class="mb-3">
+            <label>Data de Retirada</label>
+            <input type="date" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label>Data de Devolução</label>
+            <input type="date" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label>Local de Retirada</label>
+            <select class="form-select">
+                <option>Loja Centro</option>
+                <option>Loja Aeroporto</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-success">Confirmar Aluguel</button>
+    </form>
+</div>
