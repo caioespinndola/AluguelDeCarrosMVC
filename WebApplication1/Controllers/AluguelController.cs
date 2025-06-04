@@ -4,7 +4,7 @@ namespace WebApplication1.Controllers
 {
     public class AluguelController : Controller
     {
-        public IActionResult Finalizar(int id)
+        public IActionResult Index(int id)
         {
             
             ViewBag.CarroId = id;

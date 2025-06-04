@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "Carros Disponíveis";
 }
-
+@model List<AluguelDeCarrosMVC.Models.Carro>
 <div class="container mt-4">
     <h2>Carros para Aluguel</h2>
 
@@ -12,10 +12,10 @@
         {
             <div class="col-md-4 mb-4">
                 <div class="card shadow-sm">
-                    <img src="@carro.ImagemUrl" class="card-img-top" alt="@carro.Modelo">
+                    
                     <div class="card-body">
                         <h5 class="card-title">@carro.Modelo</h5>
-                        <p class="card-text">A partir de R$@carro.PrecoPorDia/dia</p>
+                        
                         <a href="/Carros/Detalhes/@carro.Id" class="btn btn-primary">Ver Detalhes</a>
                     </div>
                 </div>

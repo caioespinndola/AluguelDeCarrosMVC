@@ -13,7 +13,8 @@ namespace AluguelDeCarros.Controllers
         {
             _context = context;
         }
-
+        [HttpGet]
+        [Route("Carros")]
         public IActionResult Index()
         {
             var carros = _context.Carros.ToList();
@@ -31,6 +32,15 @@ namespace AluguelDeCarros.Controllers
             _context.Carros.Add(carro);
             _context.SaveChanges();
             return RedirectToAction("Index");
+
+        }
+        [HttpGet]
+        [Route("Carros/Detalhes/{id}")]
+        public IActionResult Detalhes (int id)
+        {
+            var carros = _context.Carros.ToList().Where(x => x.Id == id).FirstOrDefault();
+            return View(carros);
+
         }
     }
 }

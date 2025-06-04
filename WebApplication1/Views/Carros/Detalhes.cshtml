@@ -3,20 +3,20 @@
 @{
     ViewData["Title"] = "Detalhes do Carro";
 }
-
+@model AluguelDeCarrosMVC.Models.Carro
 <div class="container mt-4">
     <h2>@Model.Modelo</h2>
     <div class="row">
         <div class="col-md-6">
-            <img src="@Model.ImagemUrl" class="img-fluid rounded" />
+         @*    <img src="@Model.ImagemUrl" class="img-fluid rounded" /> *@
         </div>
         <div class="col-md-6">
-            <h4>R$@Model.PrecoPorDia/dia</h4>
-            <p>@Model.Descricao</p>
+            @* <h4>R$@Model.PrecoPorDia/dia</h4> *@
+            @* <p>@Model.Descricao</p> *@
             <ul>
-                <li>Ano: @Model.Ano</li>
-                <li>Combustível: @Model.Combustivel</li>
-                <li>Câmbio: @Model.Cambio</li>
+                <@* li>Ano: @Model.Ano</li> *@
+               @*  <li>Combustível: @Model.Combustivel</li> *@
+                @* <li>Câmbio: @Model.Cambio</li> *@
             </ul>
             <a href="/Aluguel/Finalizar/@Model.Id" class="btn btn-success">Alugar Agora</a>
         </div>
